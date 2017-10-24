@@ -1,0 +1,36 @@
+{
+  "name": "blizzard-casc",
+  "version": "1.0.0",
+  "description": "Utility for interacting with the CASC CDN servers used to distribute Blizzard Entertainment game content.",
+  "main": "blizzard-casc.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kruithne/node-blizzard-casc.git"
+  },
+  "keywords": [
+    "blizzard",
+    "casc",
+    "cdn",
+    "game",
+    "world",
+    "warcraft",
+    "starcraft",
+    "diablo",
+    "hearthstone",
+    "heroes",
+    "storm",
+    "destiny",
+    "battle",
+    "net",
+    "bnet"
+  ],
+  "author": "Kruithne <kruithne@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Kruithne/node-blizzard-casc/issues"
+  },
+  "homepage": "https://github.com/Kruithne/node-blizzard-casc#readme"
+}

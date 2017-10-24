@@ -1,0 +1,5 @@
+# PhpStorm Project Folder
+.idea
+
+# Node Module Directory
+node_modules
