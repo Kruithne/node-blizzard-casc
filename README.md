@@ -11,6 +11,12 @@ Utility for interacting with the CASC CDN servers used to distribute Blizzard En
 | Starcraft 2 | No |
 | Destiny 2 | No |
 
+### Q: I copied the example code and it doesn't work.
+A: Read through the comments in the example rather than copy/pasting.
+
+### Q: Why isn't there a single function that just downloads the exact file I want?
+A: This is intended as an interface that handles the dirty work for writing tools that interact with CASC. If you're using this module, you should be taking consideration and indexing/caching the results of these functions rather than railing Blizzard's CDN, bundling everything into memory and hoping for the best.
+
 ## Installing
 ```
 npm install blizzard-casc
