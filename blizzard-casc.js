@@ -47,6 +47,8 @@ const ContentFlag = {
 	NoCompression: 0x80000000
 };
 
+const EMPTY_HASH = [0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0, 0x0];
+
 class CASC {
 	/**
 	 * Get the target product. Throws an error if not set.
@@ -194,6 +196,10 @@ class CASC {
 		// Iterate all entries in the archive.
 		for (let j = 0; j < count; j++) {
 			let hash = archive.readUInt8(16);
+
+			// Skip zero hashes.
+			if (bytey.isByteArrayEqual(hash, EMPTY_HASH))
+				hash = archive.readUInt8(16);
 
 			entries.push({
 				Hash: bytey.byteArrayToHexString(hash),
