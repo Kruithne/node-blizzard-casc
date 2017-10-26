@@ -266,7 +266,7 @@ class CASC {
 	 * @returns {Promise.<{Entries: Array, Types: Array}>}
 	 */
 	async parseRootFile(root) {
-		let entries = [], types = [];
+		let rootEntries = [], types = [];
 
 		// Download root file if provided with a key.
 		if (typeof root === 'string')
@@ -313,7 +313,7 @@ class CASC {
 				if (hashCheck !== undefined && hashCheck !== hash)
 					continue;
 
-				entries.push({
+				rootEntries.push({
 					Hash: hash,
 					FileDataID: entry.FileDataID,
 					Key: key,
@@ -324,7 +324,7 @@ class CASC {
 			}
 		}
 
-		return { Entries: entries, Types: types };
+		return { Entries: rootEntries, Types: types };
 	}
 
 	/**
