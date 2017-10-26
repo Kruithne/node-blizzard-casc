@@ -288,7 +288,7 @@ class CASC {
 				throw new Error('Root: Invalid content flag set (%d)', contentFlag);
 
 			typeIndex++;
-			types[] = { LocaleFlag: localeFlag, ContentFlag: contentFlag };
+			types[typeIndex] = { LocaleFlag: localeFlag, ContentFlag: contentFlag };
 
 			let entries = [];
 			let fileDataIndex = 0;
