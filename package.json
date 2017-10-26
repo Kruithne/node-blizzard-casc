@@ -1,6 +1,6 @@
 {
   "name": "blizzard-casc",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Utility for interacting with the CASC CDN servers used to distribute Blizzard Entertainment game content.",
   "main": "blizzard-casc.js",
   "scripts": {

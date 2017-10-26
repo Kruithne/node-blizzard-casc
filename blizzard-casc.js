@@ -274,7 +274,7 @@ class CASC {
 
 		root.seek(0); // Reset reader.
 
-		let rootIndex = {}, typeIndex = 0;
+		let rootIndex = {}, typeIndex = -1;
 		while (root.offset < root.byteLength) {
 			let count = root.readInt32();
 
@@ -288,7 +288,7 @@ class CASC {
 				throw new Error('Root: Invalid content flag set (%d)', contentFlag);
 
 			typeIndex++;
-			types[typeIndex] = { LocaleFlag: localeFlag, ContentFlag: contentFlag };
+			types[] = { LocaleFlag: localeFlag, ContentFlag: contentFlag };
 
 			let entries = [];
 			let fileDataIndex = 0;
