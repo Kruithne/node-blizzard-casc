@@ -36,7 +36,7 @@
   "dependencies": {
     "bufo": "^1.0.5",
     "bytey": "^1.0.3",
-    "node-blte": "^1.0.2",
+    "node-blte": "^1.2.0",
     "request": "^2.83.0",
     "request-promise-native": "^1.0.5"
   }
